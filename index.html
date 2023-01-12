@@ -32,8 +32,7 @@
   </head>
   <body>
     <div class="pre-loader">
-      <div class="loading">
-      </div>
+      <div class="loading"></div>
     </div>
     <header id="header">
       <div class="max">
@@ -145,6 +144,17 @@
           ele.classList.remove("navp1");
           navp1.classList.add("navp1");
         });
+      });
+
+      const preload = document.querySelector(".pre-loader");
+      const number = document.querySelector(".number");
+      const mainTxt = document.querySelector(".main-txt");
+      const logo2 = document.querySelector(".logo2");
+
+      window.addEventListener("load", () => {
+        preload.classList.add("stop-preloader");
+        mainTxt.style.animationName = "maintxt";
+        logo2.style.animationName = "logo2a";
       });
     </script>
     <script src="./scripts.js"></script>

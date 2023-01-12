@@ -82,6 +82,7 @@ body {
   /* height: 100%; */
   position: relative;
   overflow-x: hidden;
+  min-height: 100vh;
   width: 100%;
   /* overflow: hidden; */
 }
@@ -274,7 +275,14 @@ nav {
   /* background-color: red; */
   padding-right: 1rem;
   line-height: 1.2;
+  padding-left: 1rem;
 }
+
+.thead{
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+
 
 .title {
   padding: 0.5rem;
@@ -296,6 +304,7 @@ h2:nth-child(2) {
 h2:nth-child(3) {
   font-size: 1.5em;
 }
+
 
 .arrow {
   /* background-color: red; */
