@@ -276,6 +276,7 @@ nav {
   padding-right: 1rem;
   line-height: 1.2;
   padding-left: 1rem;
+  padding-top: 1rem;
 }
 
 .thead{
@@ -462,6 +463,7 @@ h2:nth-child(3) {
 
   .main-txt p{
     padding-left: 0;
+    padding-top: 0;
   }
   .skew {
     bottom: -0.5rem;
