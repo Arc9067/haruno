@@ -224,12 +224,12 @@ nav {
   /* margin: 0 auto; */
   padding-left: var(--mpadding);
   transform: translateX(-200%);
-  /* animation-name: maintxt; */
+  animation-name: maintxt;
   animation-duration: 2s;
   animation-iteration-count: 1;
   animation-play-state: running;
   animation-fill-mode: forwards;
-  animation-delay: 1s;
+  animation-delay: 3s;
   padding-bottom: 2rem;
 }
 
@@ -250,7 +250,7 @@ nav {
 .logo2 {
   width: 20rem;
   transform: translateX(200%);
-  /* animation-name: logo2a; */
+  animation-name: logo2a;
   animation-duration: 2s;
   animation-iteration-count: 1;
   animation-play-state: running;
@@ -343,7 +343,7 @@ h2:nth-child(3) {
   height: 100%;
 }
 
-@keyframes spinner {
+/* @keyframes spinner {
   100% {
     transform: rotate(360deg);
   }
@@ -357,6 +357,7 @@ h2:nth-child(3) {
   display: flex;
   justify-content: center;
   align-items: center;
+  display: none;
 }
 
 .loading {
@@ -370,7 +371,7 @@ h2:nth-child(3) {
 
 .stop-preloader {
   display: none;
-}
+} */
 
 @media screen and (min-width: 800px) {
   body {
@@ -478,4 +479,7 @@ h2:nth-child(3) {
     scale: 1.2;
   }
   
+  .pre-loader{
+    display: flex;
+  }
 }
