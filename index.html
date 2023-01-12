@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta
+      name="theme-color"
+      content="#FF4879"
+    />
+    <meta
+      name="description"
+      content="Haruno is a Japanese animation style produced or influenced by Japan. It comes from the Japanese term for cartoon or animation. "
+    />
+    <title>Haruno Anime Official</title>
+    <!-- css link -->
+    <link
+      rel="stylesheet"
+      href="./style.css"
+    />
+    <!-- fon awesome -->
+    <script
+      src="https://kit.fontawesome.com/22d9f2c7a2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="pre-loader">
+      <div class="loading">
+      </div>
+    </div>
+    <header id="header">
+      <div class="max">
+        <nav>
+          <div class="menu">
+            <a
+              class="nav-logo"
+              href=""
+              ><img
+                src="./img/logo.png"
+                alt=""
+            /></a>
+            <button class="toggle btn"><i class="fa-solid fa-bars"></i></button>
+          </div>
+          <ul class="nav-ul">
+            <li>
+              <p class="navp navp1">
+                <span class="fa-solid fa-house nav-span"></span>home
+              </p>
+            </li>
+            <li>
+              <p class="navp">
+                <span class="fa-solid fa-video nav-span"></span>latest animes
+              </p>
+            </li>
+            <li>
+              <p class="navp">
+                <span class="fa-brands fa-youtube nav-span"></span> subscribe
+              </p>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <main id="main">
+        <div class="main-div max">
+          <div class="main-img">
+            <img
+              class="logo2"
+              src="./img/logo2.png"
+              alt=""
+            />
+          </div>
+          <div class="main-txt">
+            <div class="thead">
+              <h2 class="title">japanese</h2>
+              <h2>haruno</h2>
+              <h2>animate</h2>
+            </div>
+            <div class="tbottom">
+              <p>
+                Haruno is a Japanese animation style produced or influenced by
+                Japan. It comes from the Japanese term for cartoon or animation.
+                Though cartoon animation in the japanese language may mean any
+                form of Japanese animation, outside Japan this distinction loses
+                its meaning. Outside Japan, a wider definition of "anime" refers
+                to all cartoons irrespective of the country of origin, but in
+                Japan there is a specific distinction between anime (Japanese)
+                and "Western cartoons" that use inaccurate racial caricatures
+                and violence (e.g., Samurai Jack).
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </header>
+
+    <div class="skew">
+      <img
+        src="./img/bdiv.png"
+        alt=""
+      />
+    </div>
+    <img
+      src="./img/arow.png"
+      class="arrow"
+      alt=""
+    />
+    <div class="right-arrow"></div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const toggle = document.querySelector(".toggle");
+      const nav_ul = document.querySelector(".nav-ul");
+
+      toggle.addEventListener("click", () => {
+        nav_ul.classList.toggle("diplay-ul");
+
+        if (nav_ul.classList.contains("diplay-ul")) {
+          toggle.classList.add("di-toggle");
+        } else {
+          toggle.classList.remove("di-toggle");
+        }
+      });
+      const navp1 = document.querySelector(".navp1");
+      const navp = document.querySelectorAll(".navp");
+
+      navp.forEach((ele) => {
+        ele.addEventListener("mouseover", () => {
+          navp1.classList.remove("navp1");
+          if (!ele.classList.contains("navp1")) {
+            ele.classList.add("navp1");
+          }
+        });
+        ele.addEventListener("mouseleave", () => {
+          ele.classList.remove("navp1");
+          navp1.classList.add("navp1");
+        });
+      });
+    </script>
+    <script src="./scripts.js"></script>
+  </body>
+</html>
